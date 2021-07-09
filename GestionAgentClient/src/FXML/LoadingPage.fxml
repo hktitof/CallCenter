@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.image.Image?>
@@ -7,17 +8,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_LoadingPage">
+<AnchorPane fx:id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_LoadingPage">
    <children>
       <ImageView fitHeight="200.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/logo1_test4.png" />
          </image>
       </ImageView>
-      <Label fx:id="CountingLabel" layoutX="351.0" layoutY="145.0" text="0" textFill="#00aaff" translateX="-3.0" translateY="4.0">
+      <Label fx:id="CountingLabel" layoutX="351.0" layoutY="145.0" onMousePressed="#ClickOnLabelToClose" text="0" textFill="#00aaff" translateX="-3.0" translateY="4.0">
          <font>
             <Font size="17.0" />
-         </font></Label>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
       <ProgressBar fx:id="bar" layoutX="130.0" layoutY="175.0" prefHeight="23.0" prefWidth="274.0" progress="0.0" style="-fx-accent: #f58e33;" />
    </children>
 </AnchorPane>

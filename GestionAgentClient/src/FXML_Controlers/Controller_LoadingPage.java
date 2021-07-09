@@ -1,36 +1,51 @@
-package application;
+package FXML_Controlers;
+
 
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Transitions.FadeTransitionClass;
+import application.Main;
 import javafx.concurrent.Task;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import javafx.stage.WindowEvent;
+import javafx.util.Duration;
 
 
 
 
 
 
-public class Controller_LoadingPage implements Initializable{
+public class Controller_LoadingPage extends Main implements Initializable{
 	@FXML
     private AnchorPane AnchorPane;
 	public static Label static_label_CountingLabel;
 	@FXML
     private ProgressBar bar;
-	@FXML private javafx.scene.control.Label CountingLabel;
+	
+	@FXML
+    private Label CountingLabel;
+	
+	
 	
 
 
 	public boolean finished=false;
 	
+	private Stage stage = new Stage();
 	
 	@Override
 	public void initialize(URL location, ResourceBundle arg1) {
@@ -41,25 +56,40 @@ public class Controller_LoadingPage implements Initializable{
 		bar.progressProperty().bind(task.progressProperty());
 		static_label_CountingLabel.textProperty().bind(task.messageProperty());
 		new Thread(task).start();	
+		
 	
 	}
 	
 	public void closed() {
-		Stage stage = (Stage) CountingLabel.getScene().getWindow();
-		  // do what you have to do
-		  stage.close();
+		
 	}
 	
 	
+	
+	
+	
+	
+	@FXML
+    void ClickOnLabelToClose(MouseEvent event) {
+		((Stage)(((Label)event.getSource()).getScene().getWindow())).close();
+
+    }
+	
 	class Dowork extends Task<Integer> {
+		
+		
 		private boolean finished=false;
+		
 		
 		public boolean isFinished() {
 			return finished;
 		}
+		
+		
 		public void setFinished(boolean finished) {
 			this.finished = finished;
 		}
+		
 		@Override
 		protected Integer call() throws Exception {
 			for (int i =0; i<100; i++) {
@@ -75,10 +105,7 @@ public class Controller_LoadingPage implements Initializable{
 			}
 			finished=true;
 			Thread.sleep(500);
-			System.out.println("Click here to open..");
-			Stage stage = (Stage) bar.getScene().getWindow();
-			  // do what you have to do
-			  stage.close();
+			
 			return 100;
 			
 		}
@@ -88,17 +115,17 @@ public class Controller_LoadingPage implements Initializable{
 		}
 		@Override
 		protected void updateProgress(double workDone, double max) {
-			//System.out.println(percentStringList[0]);
 			if(workDone==100) {
 				updateMessage(workDone+" %");
 				super.updateProgress(workDone, max);
 				try {
 					Thread.sleep(500);
-					updateMessage("Click here..");
+					updateMessage("Cliquer ici..");
+					FadeTransitionClass trans = new FadeTransitionClass(200,CountingLabel);
+					trans.run();
 					super.updateProgress(workDone, max);
-					Stage stage = (Stage) bar.getScene().getWindow();
-					  // do what you have to do
-					  stage.close();
+					ClickOnLabelToClose(null);
+					closed();
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -111,9 +138,7 @@ public class Controller_LoadingPage implements Initializable{
 		}
 	}
 	
-	public boolean isFinishe() {
-		return finished;
-	}
+	
 	
 
 	
