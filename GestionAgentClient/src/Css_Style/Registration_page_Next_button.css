@@ -1,0 +1,14 @@
+#Next_button {
+    -fx-background-color: linear-gradient(#00aeef, #00aeef);
+	-fx-border-radius: 30px;
+	-fx-border-color:#00aeef;
+    -fx-background-radius: 30 ;
+    -fx-background-insets: 0;
+    -fx-text-fill: White;
+	
+}
+
+#Next_button:hover {
+    -fx-background-color: linear-gradient(#FFFFFF, #FFFFFF);
+	-fx-text-fill: Black;
+}

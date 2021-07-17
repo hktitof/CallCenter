@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="210.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="203.0" layoutY="21.0" text="identifiant oublié ?">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font></Label>
+      <TextField layoutX="231.0" layoutY="121.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="20.0" layoutY="58.0" text="Remplissez le formulaire ci-dessous et vous vous enverrons par email les informations">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="79.0" text="nécessaires pout accéder votre compte.">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="123.0" text="Votre email :">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="382.0" layoutY="161.0" mnemonicParsing="false" style="-fx-background-color: #3c7fb1,        linear-gradient(#fafdfe, #e8f5fc),        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);    -fx-background-insets: 0,1,2;    -fx-background-radius: 3,2,1;    -fx-padding: 3 30 3 30;    -fx-text-fill: black;    -fx-font-size: 14px;;" text="Retrouver mon compte" translateY="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="231.0" layoutY="144.0" text="indiquez l'email de votre compte..">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

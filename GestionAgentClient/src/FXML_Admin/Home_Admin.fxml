@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane_changeable" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers_Admin.Home">
+   <children>
+      <Rectangle arcHeight="90.0" arcWidth="90.0" fill="#8cc8ff" height="144.0" layoutX="59.0" layoutY="178.0" stroke="WHITE" strokeType="INSIDE" width="143.0" />
+      <Rectangle arcHeight="90.0" arcWidth="90.0" fill="#8cc8ff" height="144.0" layoutX="220.0" layoutY="178.0" stroke="WHITE" strokeType="INSIDE" width="143.0" />
+      <Rectangle arcHeight="90.0" arcWidth="90.0" fill="#8cc8ff" height="144.0" layoutX="380.0" layoutY="178.0" stroke="WHITE" strokeType="INSIDE" width="143.0" />
+      <Rectangle arcHeight="90.0" arcWidth="90.0" fill="#8cc8ff" height="144.0" layoutX="539.0" layoutY="178.0" stroke="WHITE" strokeType="INSIDE" width="143.0" />
+      <Rectangle arcHeight="90.0" arcWidth="90.0" fill="#8cc8ff" height="144.0" layoutX="698.0" layoutY="178.0" stroke="WHITE" strokeType="INSIDE" width="143.0" />
+      <ImageView fitHeight="90.0" fitWidth="87.0" layoutX="84.0" layoutY="207.0" onMousePressed="#Pressed_ON_image_Agent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user%20icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="340.0" text="Agent">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="152.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/configuration%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="87.0" layoutX="248.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/statistics%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="87.0" layoutX="407.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Parametre.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

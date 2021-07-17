@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane_Changeable" prefHeight="500.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_Registration">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00aeef" height="176.0" layoutX="-1.0" stroke="#00aeef" strokeType="INSIDE" width="348.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" cache="true" fill="WHITE" height="456.0" layoutX="28.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="287.0" />
+      <Label layoutX="126.0" layoutY="52.0" text="Inscription">
+         <font>
+            <Font name="Bell MT" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="500.0" fitWidth="346.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" scaleX="1.01" scaleY="1.01" visible="false">
+         <image>
+            <Image url="@../images/background%202.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="115.0" layoutX="71.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2">
+         <image>
+            <Image url="@../images/icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Label_Prenom" layoutX="61.0" layoutY="134.0" text="Prenom :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textfield_Prenom" alignment="CENTER" focusColor="#00aeef" layoutX="63.0" layoutY="151.0" prefHeight="25.0" prefWidth="216.0" promptText="Prenom" unFocusColor="BLACK" />
+      <Label fx:id="Lable_Nom" layoutX="59.0" layoutY="198.0" text="Nom :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textfield_Nom" alignment="CENTER" focusColor="#00aeef" layoutX="59.0" layoutY="215.0" prefHeight="25.0" prefWidth="216.0" promptText="Nom" />
+      <Label fx:id="Label_naissance" layoutX="54.0" layoutY="334.0" text="Date de naissance :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="DatePicker_naissance" defaultColor="#00aeef" layoutX="54.0" layoutY="358.0" prefHeight="25.0" prefWidth="225.0" promptText="DD/MM/YYYY">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <Label fx:id="Label_telephone" layoutX="53.0" layoutY="267.0" text="Numero Telephone :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textfield_telephone" alignment="CENTER" focusColor="#00aeef" layoutX="55.0" layoutY="289.0" prefHeight="25.0" prefWidth="216.0" promptText="+212 6 12345678" />
+      <Button fx:id="Back_button" layoutX="57.0" layoutY="430.0" mnemonicParsing="false" onAction="#Click_On_Retour" prefHeight="32.0" prefWidth="106.0" stylesheets="@../Css_Style/Registration_page_Back_button.css" text="Retour">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Next_button" layoutX="179.0" layoutY="428.0" mnemonicParsing="false" onAction="#Suivant_Click" prefHeight="32.0" prefWidth="106.0" stylesheets="@../Css_Style/Registration_page_Next_button.css" text="Suivant">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="Label_utilisateur" layoutX="65.0" layoutY="141.0" text="Nom de l'utilisateur" visible="false">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textfield_Nom_do_utilisateur" alignment="CENTER" focusColor="#00aeef" layoutX="65.0" layoutY="164.0" prefHeight="25.0" prefWidth="216.0" promptText="Nom de l'utilisateur" unFocusColor="BLACK" visible="false" />
+      <Label fx:id="Label_email" layoutX="65.0" layoutY="208.0" text="Email :" visible="false">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textfield_email" alignment="CENTER" focusColor="#00aeef" layoutX="65.0" layoutY="225.0" prefHeight="25.0" prefWidth="216.0" promptText="email" visible="false" />
+      <Label fx:id="Label_mot_de_passe" layoutX="65.0" layoutY="271.0" text="Mot de passe :" visible="false">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label_verfificatioin" layoutX="65.0" layoutY="336.0" text="Vérification :" visible="false">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="textfield_mot_de_passe" alignment="CENTER" layoutX="65.0" layoutY="295.0" prefHeight="25.0" prefWidth="216.0" />
+      <JFXPasswordField fx:id="textfield_verification" alignment="CENTER" layoutX="65.0" layoutY="359.0" prefHeight="25.0" prefWidth="216.0" />
+   </children>
+</AnchorPane>

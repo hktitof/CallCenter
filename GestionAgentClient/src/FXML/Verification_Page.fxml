@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane_Changeable" prefHeight="500.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_verfication_code">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00aeef" height="176.0" layoutX="-1.0" stroke="#00aeef" strokeType="INSIDE" width="348.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" cache="true" fill="WHITE" height="456.0" layoutX="28.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="287.0" />
+      <ImageView fx:id="image_1_checking" fitHeight="58.0" fitWidth="57.0" layoutX="143.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Loading.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_1_checking" layoutX="98.0" layoutY="250.0" text="envoi code de verification a :" />
+      <Label fx:id="label_2_checking_add_email" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="282.0" prefHeight="17.0" prefWidth="220.0" textAlignment="CENTER" />
+      <Label fx:id="label_1_verification" layoutX="51.0" layoutY="164.0" text="Entrer le code de verfication." visible="false">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_2_verification" layoutX="55.0" layoutY="191.0" text="On vient d'envoye un code de verfication a l'email suivant :" visible="false">
+         <font>
+            <Font name="Gill Sans MT Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_3_add_email" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="219.0" prefHeight="14.0" prefWidth="238.0" textAlignment="CENTER" textFill="#00aeef" visible="false">
+         <font>
+            <Font name="Gill Sans MT" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_1" layoutX="56.0" layoutY="248.0" onKeyPressed="#text1_inputPressed" onKeyReleased="#text1_Realeased" prefHeight="51.0" prefWidth="37.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textfield_2" layoutX="103.0" layoutY="248.0" onKeyPressed="#text2_inputPressed" onKeyReleased="#text2_Realeased" prefHeight="51.0" prefWidth="37.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="textfield_3" layoutX="151.0" layoutY="248.0" onKeyPressed="#text3_inputPressed" onKeyReleased="#text3_Realeased" prefHeight="51.0" prefWidth="37.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="textfield_4" layoutX="200.0" layoutY="248.0" onKeyPressed="#text4_inputPressed" onKeyReleased="#text4_Realeased" prefHeight="51.0" prefWidth="37.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="textfield_5" layoutX="251.0" layoutY="248.0" onKeyPressed="#text5_inputPressed" onKeyReleased="#text5_Realeased" prefHeight="51.0" prefWidth="37.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label fx:id="label_4_verification" layoutX="122.0" layoutY="305.0" text="Enter ce code ci-dessus" visible="false">
+         <font>
+            <Font name="Gill Sans MT Italic" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="round_red" layoutX="100.0" layoutY="336.0" mnemonicParsing="false" onMousePressed="#Pressed_ON_Verifier_Button" prefHeight="32.0" prefWidth="141.0" stylesheets="@../Css_Style/verfication_code_button_verify.css" text="Verifier" visible="false" />
+      <ImageView fx:id="image_icon_felicitation" fitHeight="105.0" fitWidth="82.0" layoutX="131.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/unnamed.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_sucess" layoutX="154.0" layoutY="240.0" text="Success" visible="false" />
+      <Label fx:id="label_felicitation" layoutX="41.0" layoutY="265.0" text="Félicitation, votre compte a été créé avec succès." visible="false" />
+      <Button fx:id="Button_Continue" layoutX="101.0" layoutY="296.0" mnemonicParsing="false" onMousePressed="#Pressed_On_Continue" prefHeight="32.0" prefWidth="141.0" stylesheets="@../Css_Style/styles.css" text="Continue" visible="false" />
+   </children>
+</AnchorPane>

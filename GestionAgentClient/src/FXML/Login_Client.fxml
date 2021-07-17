@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_Login_Client">
+   <children>
+      <AnchorPane fx:id="AnchorPane_Chnageable" layoutX="357.0" layoutY="2.0" prefHeight="500.0" prefWidth="342.0" />
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="503.0" prefWidth="359.0" style="-fx-background-color: linear-gradient(to right, #00aeef, #72baf5, #a2c7f8, #c7d6fa, #e3e6fc, #e3e6fc, #e3e6fc, #e3e6fc, #c7d6fa, #a2c7f8, #72baf5, #00aeef);;">
+         <children>
+            <ImageView fitHeight="289.0" fitWidth="337.0" layoutX="35.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logo%20home%203.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="296.0" layoutX="36.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true" scaleY="0.7">
+               <image>
+                  <Image url="@../images/Logo%20under%205.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="1184.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_Home_Client_AnchorPane_Home">
+   <children>
+      <AnchorPane fx:id="AnchorPane_Home_changed" layoutX="-14.0" prefHeight="514.0" prefWidth="1184.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="259.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="32.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="709.0" layoutY="150.0" onMousePressed="#Click_ON_Chat_En_ligne" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="485.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="938.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="84.0" layoutX="98.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notiificaiton.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="287.0" text="Notifications" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="320.0" layoutY="189.0" onMousePressed="#Pressed_On_Reclamation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/reclamation.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="287.0" text="Reclamations" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="546.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Mesages.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="535.0" layoutY="287.0" text="Messages" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="127.0" layoutX="753.0" layoutY="189.0" onMousePressed="#Click_ON_Chat_En_ligne" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
+               <image>
+                  <Image url="@../images/live%20chat.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="738.0" layoutY="292.0" onMousePressed="#Click_ON_Chat_En_ligne" text="Chat en ligne" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="94.0" layoutX="1000.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Parametre.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="979.0" layoutY="287.0" text="Paramètres" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="84.0" layoutX="488.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Accueil.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="578.0" layoutY="34.0" text="Accueil" textFill="#ff8b03">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

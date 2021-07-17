@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controlers.Controller_Home_Client">
+   <children>
+      <AnchorPane layoutX="69.0" prefHeight="92.0" prefWidth="1184.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="70.0" layoutX="874.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/account-information-icon-13.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="951.0" layoutY="29.0" text="Id :" />
+            <Label layoutX="951.0" layoutY="52.0" text="dernière connexion :" />
+            <Label layoutX="375.0" layoutY="26.0" text="Bienvenue">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="305.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon%20user%20above.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_username" layoutX="375.0" layoutY="54.0" text="Titof" />
+            <ImageView fitHeight="79.0" fitWidth="270.0" layoutX="22.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo%20for%20home.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_client_id" layoutX="977.0" layoutY="29.0" text="12345" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AnchorPane_Home_changed" layoutX="72.0" layoutY="87.0" prefHeight="514.0" prefWidth="1184.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="259.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="32.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="709.0" layoutY="150.0" onMousePressed="#Click_ON_Chat_En_ligne" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="485.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="215.0" layoutX="938.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Rectangle%20Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="84.0" layoutX="98.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notiificaiton.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="287.0" text="Notifications" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="320.0" layoutY="189.0" onMousePressed="#Pressed_On_Reclamation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/reclamation.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="287.0" text="Reclamations" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="546.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Mesages.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="535.0" layoutY="287.0" text="Messages" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="127.0" layoutX="753.0" layoutY="189.0" onMousePressed="#Click_ON_Chat_En_ligne" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
+               <image>
+                  <Image url="@../images/live%20chat.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="738.0" layoutY="292.0" onMousePressed="#Click_ON_Chat_En_ligne" text="Chat en ligne" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="94.0" layoutX="1000.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Parametre.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="979.0" layoutY="287.0" text="Paramètres" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="84.0" layoutX="488.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Accueil.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="578.0" layoutY="34.0" text="Accueil" textFill="#ff8b03">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" prefHeight="602.0" prefWidth="79.0" style="-fx-background-color: #3a343c;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="23.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notification%20bar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="22.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Reclamations%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="22.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/messages%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="22.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/live%20chat%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="23.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/parametre%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="19.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="23.0" layoutY="76.0" onMousePressed="#Pressed_On_Home_icon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Accueil%20icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Line endX="46.0" layoutX="34.0" layoutY="51.0" startX="-34.000030517578125" stroke="#888686" />
+            <Line endX="45.0" layoutX="34.0" layoutY="57.0" startX="-33.999969482421875" stroke="#888686" />
+            <Label layoutX="23.0" layoutY="14.0" text="UPM" />
+            <Label layoutX="14.0" layoutY="10.0" text="UPM" textFill="#888686">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="21.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/statistics%20icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+#Back_button {
+    -fx-background-color: linear-gradient(#FFFFFF, #FFFFFF);
+	-fx-border-radius: 30px;
+	-fx-border-color:#F99E28;
+    -fx-background-radius: 30 ;
+    -fx-background-insets: 0;
+    -fx-text-fill: Black;
+	
+}
+
+#Back_button:hover {
+    -fx-background-color: linear-gradient(#00aeef, #00aeef);
+	-fx-text-fill: white;
+}

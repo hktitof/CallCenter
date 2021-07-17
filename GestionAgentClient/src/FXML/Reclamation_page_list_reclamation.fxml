@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="57.0" prefWidth="931.0" style="-fx-background-color: #48a3ff;">
+         <children>
+            <Label layoutX="18.0" layoutY="11.0" text="Recherche :" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="155.0" layoutY="16.0" prefHeight="25.0" prefWidth="765.0" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="24.0" layoutY="101.0" prefHeight="391.0" prefWidth="557.0" stylesheets="@../Css_Style/table.css">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="75.0" text="date" />
+            <TableColumn prefWidth="317.0" text="sujet" />
+            <TableColumn prefWidth="110.0" text="Statut" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="391.0" layoutX="593.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Label layoutX="603.0" layoutY="109.0" text="Description :" />
+      <TextArea layoutX="603.0" layoutY="133.0" prefHeight="352.0" prefWidth="297.0" />
+   </children>
+</AnchorPane>

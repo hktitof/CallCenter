@@ -1,0 +1,14 @@
+#Quitter_button {
+    -fx-background-color: linear-gradient(#ffe657, #efaa22);
+	-fx-border-radius: 30px;
+	-fx-border-color:#F99E28;
+    -fx-background-radius: 30 ;
+    -fx-background-insets: 0;
+    -fx-text-fill: Black;
+	
+}
+
+#Quitter_button:hover {
+    -fx-background-color: linear-gradient(#ffffff, #ffffff);
+	-fx-text-fill: Black;
+} 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers_Admin.Controllers_Admin_list">
+   <children>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="84.0" prefHeight="333.0" prefWidth="663.0" stylesheets="@../Css_Style/table.css">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="43.0" text="id" />
+          <TableColumn fx:id="col_username" prefWidth="100.0" text="username" />
+            <TableColumn fx:id="col_email" prefWidth="214.0" text="email" />
+            <TableColumn fx:id="col_password" prefWidth="237.0" text="password" />
+            <TableColumn fx:id="col_statut" prefWidth="68.0" text="Chat statut" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="17.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="663.0" />
+      <TextField fx:id="textfield_search" layoutX="120.0" layoutY="46.0" prefHeight="25.0" prefWidth="548.0" />
+      <Label layoutX="26.0" layoutY="45.0" prefHeight="27.0" prefWidth="94.0" text="Recherche :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_count" layoutX="18.0" layoutY="424.0" prefHeight="17.0" prefWidth="318.0" text="Label" />
+   </children>
+</AnchorPane>

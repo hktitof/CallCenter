@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="514.0" prefWidth="920.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="FXML_Controlers.Controller_Reclamation_list">
+   <children>
+      <TableView fx:id="tableview" layoutX="338.0" layoutY="85.0" prefHeight="345.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_sujet" prefWidth="406.0" text="Sujet" />
+            <TableColumn fx:id="col_statut" prefWidth="85.0" text="statut" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="85.0" text="Reponse :" />
+      <TextArea layoutX="24.0" layoutY="108.0" prefHeight="322.0" prefWidth="294.0" />
+   </children>
+</AnchorPane>
