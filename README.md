@@ -60,9 +60,9 @@
 
 ## Description
 
-A call centre or call center is a managed capability that can be centralised or remote that is used for receiving or transmitting a large volume of enquiries by telephone but this project is handling the message and issues by texting. An inbound call centre is operated by a company to administer incoming product or service support or information enquiries from consumers.
+Call center management system is a managed capability that can be centralised or remote it is used for receiving or transmitting a large volume of enquiries by texting, this project can be used for the both side client & agent side to handle the messages and issues. An inbound call centr is operated by a company to administer incoming product or service support or information enquiries from consumers.
 
-#####Note : check the project report in the repo
+##### Note : check the project report in the repo
 
 
 #### Technologies & libraries
@@ -72,6 +72,7 @@ A call centre or call center is a managed capability that can be centralised or 
 - Xampp/MySQL
 - Java 8
 - jfoenix
+- javax.mail
 
 
 
